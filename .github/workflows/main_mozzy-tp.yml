@@ -28,8 +28,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build with Maven
-        run: mvn clean install -f ./mozzy-tp/pom.xml
-        working-directory: ./mozzy-tp
+        run: mvn clean install -f /mozzy-tp/pom.xml
+        working-directory: /mozzy-tp
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
