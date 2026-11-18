@@ -23,6 +23,9 @@ jobs:
         with:
           java-version: '17'
           distribution: 'microsoft'
+          
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Build with Maven
         run: mvn clean install
